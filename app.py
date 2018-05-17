@@ -4,8 +4,8 @@ import numpy as  np
 import math
 import serial
 
-lower_blue = np.array([110, 50, 50])
-upper_blue = np.array([130, 255, 255])
+# lower_blue = np.array([110, 50, 50])
+# upper_blue = np.array([130, 255, 255])
 cap = cv2.VideoCapture(0)
 while True:
     ret, frame = cap.read()#读取图像一帧
