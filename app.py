@@ -6,12 +6,12 @@ import serial
 
 lower_blue = np.array([110, 50, 50])
 upper_blue = np.array([130, 255, 255])
-
+cap = cv2.VideoCapture(0)
 while True:
-   # ret, frame = cap.read()#读取图像一帧
+    ret, frame = cap.read()#读取图像一帧
     # load the image, convert it to grayscale, blur it slightly,
     # and threshold it
-    frame = cv2.imread('wan0.png')
+    # frame = cv2.imread('wan0.png')
     #frame= np.array(frame0[::-1])#摄像头安装倒置，沿X轴反转图像
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)#opencv读取的为BGR格式，转化为灰度
     cv2.imshow("arg",gray)
